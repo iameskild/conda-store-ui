@@ -6,6 +6,7 @@ COPY . .
 
 RUN yarn install
 
+# run me
 RUN mv .env.example .env
 
 EXPOSE 80
