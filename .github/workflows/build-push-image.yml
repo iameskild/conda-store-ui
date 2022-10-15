@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "Dockerfile"
-      - ".github/workflows/build-push-images.yaml"
+      - ".github/workflows/build-push-image.yml"
     tags:
       - "*"
 
