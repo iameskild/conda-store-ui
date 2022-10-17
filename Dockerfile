@@ -10,4 +10,4 @@ RUN mv .env.example .env
 
 EXPOSE 80
 
-CMD ["yarn", "run", "start", "--port", "80" "--history-api-fallback"]
+CMD [ "yarn", "run", "start", "--port", "80", "--history-api-fallback" ]
