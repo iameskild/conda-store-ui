@@ -10,4 +10,5 @@ RUN mv .env.example .env
 
 EXPOSE 80
 
+# run
 CMD [ "yarn", "webpack-dev-server", "--port", "80" ]
