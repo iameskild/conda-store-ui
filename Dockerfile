@@ -10,4 +10,4 @@ RUN mv .env.example .env
 
 EXPOSE 80
 
-CMD [ "yarn", "webpack-dev-server", "--port", "80" ]
+CMD [ "yarn", "webpack-dev-server", "--port", "80", "--allowed-hosts", "demo.nebari.dev" ]
