@@ -49,14 +49,15 @@ const basicConfig = {
     ...getResolve(__dirname)
   },
 
-  // devServer: {
-  //   // contentBase: [path.join(__dirname, "examples"), path.join(__dirname, ".")],
-  //   // inline: false,
-  //   // publicPath: "/dist/",
+  devServer: {
+    // contentBase: [path.join(__dirname, "examples"), path.join(__dirname, ".")],
+    // inline: false,
+    // publicPath: "/dist/",
 
-  //   // dev-server writes to disk instead of keeping the bundle in memory
-  //   writeToDisk: true,
-  // },
+    // dev-server writes to disk instead of keeping the bundle in memory
+    // writeToDisk: true,
+    public: "demo.nebari.dev"
+  },
 
   plugins: [
     new HtmlWebpackPlugin({
