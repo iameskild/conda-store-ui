@@ -8,6 +8,6 @@ RUN yarn install
 
 RUN mv .env.example .env
 
-EXPOSE 80
+EXPOSE 8123
 
-CMD [ "yarn", "webpack-dev-server", "--port", "80", "--allowed-hosts", "all" ]
+CMD [ "yarn", "webpack-dev-server", "--port", "8123", "--allowed-hosts", "all" ]
