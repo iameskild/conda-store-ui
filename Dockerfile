@@ -10,4 +10,5 @@ RUN mv .env.example .env
 
 EXPOSE 8123
 
+# touch
 CMD [ "yarn", "webpack-dev-server", "--port", "8123", "--allowed-hosts", "all" ]
