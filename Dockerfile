@@ -6,8 +6,12 @@ COPY . .
 
 RUN yarn install
 
+RUN NODE_ENV=production yarn webpack build --config ./webpack.config.js
+
 RUN mv .env.example .env
+
+COPY scripts /scripts/
 
 EXPOSE 8123
 
-CMD [ "yarn", "webpack:prod", "--port", "8123", "--allowed-hosts", "all" ]
+CMD ["/bin/sh", "/scripts/run.sh"]
