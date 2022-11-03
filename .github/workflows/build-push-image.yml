@@ -9,6 +9,7 @@ on:
       - ".github/workflows/build-push-image.yml"
     tags:
       - "*"
+  pull_request:
 
 permissions:
   contents: read
