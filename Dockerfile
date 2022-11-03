@@ -10,4 +10,4 @@ RUN mv .env.example .env
 
 EXPOSE 8123
 
-CMD [ "yarn", "webpack-server", "--port", "8123", "--allowed-hosts", "all" ]
+CMD [ "yarn", "webpack:prod", "--port", "8123", "--allowed-hosts", "all" ]
