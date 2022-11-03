@@ -37,7 +37,9 @@ export const EnvironmentDetailsHeader = ({
       {(mode === EnvironmentDetailsModes.READ ||
         mode === EnvironmentDetailsModes.EDIT) && (
         <>
-          <Typography sx={{ fontSize: "24px", color: "#000" }}>
+          <Typography
+            sx={{ fontSize: "19px", color: "#3C4043", fontWeight: 400 }}
+          >
             {envName}
           </Typography>
           {mode === EnvironmentDetailsModes.READ && (
@@ -55,19 +57,20 @@ export const EnvironmentDetailsHeader = ({
         <>
           <TextField
             sx={{
-              backgroundColor: "#ECECEC",
-              border: "1px solid #000",
-              width: "500px"
-            }}
-            inputProps={{
-              style: {
-                padding: "8px 16px",
-                border: "none",
-                fontSize: "24px",
-                fontWeight: 500
+              backgroundColor: "#EBECEE",
+              minWidth: "450px",
+              "&:hover fieldset": {
+                borderColor: "grey"
               }
             }}
-            variant="filled"
+            inputProps={{
+              disableUnderline: true,
+              style: {
+                padding: "8px 15px",
+                fontSize: "20px",
+                color: "#3C4043"
+              }
+            }}
             placeholder="Environment name"
             onChange={e => onUpdateName(e.target.value)}
           />

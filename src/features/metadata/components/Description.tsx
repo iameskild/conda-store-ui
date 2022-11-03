@@ -27,7 +27,8 @@ export const Description = ({
           <StyledMetadataItem
             sx={{
               fontWeight: 500,
-              paddingBottom: "0"
+              paddingBottom: "0",
+              color: "#3C4043"
             }}
           >
             Description:
@@ -42,8 +43,9 @@ export const Description = ({
               value={description}
               placeholder="Enter here the description of your environment"
               sx={{
-                backgroundColor: "#ECECEC",
-                width: "100%"
+                backgroundColor: "#F1F1F1",
+                width: "100%",
+                fontSize: "14px"
               }}
               onChange={e => onChangeDescription(e.target.value)}
             />
