@@ -50,12 +50,15 @@ const basicConfig = {
   },
 
   // devServer: {
-  //   // contentBase: [path.join(__dirname, "examples"), path.join(__dirname, ".")],
-  //   // inline: false,
-  //   // publicPath: "/dist/",
+    // contentBase: [path.join(__dirname, "examples"), path.join(__dirname, ".")],
+    // inline: false,
+    // publicPath: "/csui/",
 
-  //   // dev-server writes to disk instead of keeping the bundle in memory
+    // dev-server writes to disk instead of keeping the bundle in memory
   //   writeToDisk: true,
+  //   allowedHosts: [
+  //     'demo.nebari.dev'
+  // ]
   // },
 
   plugins: [

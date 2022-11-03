@@ -4,10 +4,14 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN yarn install --network-timeout 600000
+RUN yarn install
+
+RUN NODE_ENV=production yarn webpack build --config ./webpack.config.js
 
 RUN mv .env.example .env
 
-EXPOSE 80
+COPY scripts /scripts/
 
-CMD [ "yarn", "webpack-dev-server", "--port", "80" ]
+EXPOSE 8123
+
+CMD ["/bin/sh", "/scripts/run.sh"]
